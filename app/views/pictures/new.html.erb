@@ -1,0 +1,22 @@
+<h1> Add a New Picture</h1>
+<%= form_tag "/pictures" do %>
+  <p>
+    <%= label_tag "Artist" %> <br>
+    <%= text_field_tag "artist" %>
+  </p>
+
+  <p>
+    <%= label_tag "Title" %> <br>
+    <%= text_field_tag "title" %>
+  </p>
+
+  <p>
+    <%= label_tag "url" %><br>
+    <%= text_field_tag "url" %>
+  </p>
+
+  <p>
+    <%= submit_tag "Save" %>
+   </p> 
+
+  <% end %>

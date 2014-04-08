@@ -57,6 +57,10 @@ Photogur::Application.routes.draw do
 
 Photogur::Application.routes.draw do
   get 'pictures' => 'pictures#index', :as => "pictures"
+
+  post 'pictures'     => 'pictures#create'
+  get 'pictures/new'  => 'pictures#new'
+
   get 'pictures/:id' => 'pictures#show', as: "picture"
 end  
 
@@ -67,3 +71,43 @@ end
 
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

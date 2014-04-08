@@ -15,7 +15,6 @@ class PicturesController < ApplicationController
       ]
   end
 
-
   def show
     @pictures = [
       {
@@ -30,7 +29,15 @@ class PicturesController < ApplicationController
       },
    ]
   @picture = @pictures[params[:id].to_i]
-end
+  end
+
+  def new
+  end
+
+
+  def create
+    render :text => "Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]} "
+  end
 
 end
 

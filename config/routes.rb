@@ -56,10 +56,8 @@ Photogur::Application.routes.draw do
 
 
 Photogur::Application.routes.draw do
-  get 'pictures' => 'pictures#index'
-  get 'pictures/0'  => 'pictures#picture0'
-  get 'pictures/1'  => 'pictures#picture1'
-  # get 'pictures/:id' => 'pictures#show', as: "picture"
+  get 'pictures' => 'pictures#index', :as => "pictures"
+  get 'pictures/:id' => 'pictures#show', as: "picture"
 end  
 
 

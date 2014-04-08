@@ -53,4 +53,16 @@ Photogur::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+
+Photogur::Application.routes.draw do
+  get 'pictures' => 'pictures#index'
+end  
+
+
+
+
+
+
+
 end

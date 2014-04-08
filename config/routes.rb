@@ -3,7 +3,7 @@ Photogur::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  #root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -57,6 +57,9 @@ Photogur::Application.routes.draw do
 
 Photogur::Application.routes.draw do
   get 'pictures' => 'pictures#index'
+  get 'pictures/0'  => 'pictures#picture0'
+  get 'pictures/1'  => 'pictures#picture1'
+  # get 'pictures/:id' => 'pictures#show', as: "picture"
 end  
 
 
